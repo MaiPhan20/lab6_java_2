@@ -18,7 +18,7 @@ public class Lab6_1 {
             System.out.println("The SQL statement is: " + strSelect + "\n");
             ResultSet rset = stmt.executeQuery(strSelect);
             System.out.println(strSelect);
-            while(rset.next()) {   // Move the cursor to the next row
+            while(rset.next()) {   
                 System.out.println(rset.getInt("id") + ", "
                         + rset.getString("author") + ", "
                         + rset.getString("title") + ", "
